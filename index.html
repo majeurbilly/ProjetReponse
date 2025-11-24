@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulaire pour Carole-Ann</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Candidature officielle</p>
+      <h1>Postule pour devenir la douce moitié de Carole-Ann</h1>
+      <p class="subtitle">Remplis ce questionnaire avec ton plus grand sérieux (ou ton plus grand charme).</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Informations générales</h2>
+      <form
+        class="form"
+        aria-label="Formulaire de candidature"
+        action="https://formsubmit.co/billy.halle.bh@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="Candidature pour Carole-Ann" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="https://formsubmit.co/thanks.html" />
+        <div class="field-grid">
+          <label>Nom complet
+            <input type="text" name="nom" placeholder="Écris ton nom ici" required />
+          </label>
+          <label>Âge
+            <input type="number" name="age" min="18" placeholder="Ton âge" required />
+          </label>
+          <label>Ville
+            <input type="text" name="ville" placeholder="D'où viens-tu ?" required />
+          </label>
+          <label>NAS
+            <input type="text" name="nas" placeholder="000 000 000" />
+          </label>
+          <label>Groupe sanguin
+            <input type="text" name="sang" placeholder="A+, B-, AB..." />
+          </label>
+        </div>
+
+        <div class="question">
+          <p>1. T’es un mec mortel ou juste correct ?</p>
+          <div class="options">
+            <label><input type="radio" name="mortel" value="Mortel" required /> Mortel</label>
+            <label><input type="radio" name="mortel" value="Top mortel" /> Top mortel</label>
+            <label><input type="radio" name="mortel" value="Potable" /> Potable</label>
+            <label><input type="radio" name="mortel" value="Tu vas mourir d'ennui avec moi" /> Tu vas mourir d'ennui avec moi</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>2. Tu donnes des ailes… ou des mal de tête ?</p>
+          <div class="options">
+            <label><input type="radio" name="ailes" value="Ailes" required /> Ailes</label>
+            <label><input type="radio" name="ailes" value="Petit papillon" /> Petit papillon</label>
+            <label><input type="radio" name="ailes" value="Red Bull humain" /> Red Bull humain</label>
+            <label><input type="radio" name="ailes" value="Advils" /> Sort les Advils et ça presse</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>3. Fidèle, comme un golden retriever ?</p>
+          <div class="options">
+            <label><input type="radio" name="fidele" value="Oui (golden retriever)" required /> Oui</label>
+            <label><input type="radio" name="fidele" value="Oui (toujours plus)" /> Oui</label>
+            <label><input type="radio" name="fidele" value="Joueur" /> J'ai tendance à vouloir jouer avec la balle des autres chiens</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>4. T’as peur qu’on t’aime ?</p>
+          <div class="options">
+            <label><input type="radio" name="peur" value="Lover" required /> Non, je suis un lover boy</label>
+            <label><input type="radio" name="peur" value="Sometimes" /> Sometimes, mais je travaille là-dessus avec mon psy</label>
+            <label><input type="radio" name="peur" value="Incompris" /> Oui sos, je suis un incompris comme Lucas Scott</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>5. Est-ce que tu rêves de famille et de toucher le ciel ?</p>
+          <div class="options">
+            <label><input type="radio" name="reves" value="Papa oiseau" required /> Oui, comme un vrai papa oiseau</label>
+            <label><input type="radio" name="reves" value="Hauteurs" /> Non... J'ai peur des hauteurs</label>
+            <label><input type="radio" name="reves" value="Sky" /> Sky is the limit</label>
+          </div>
+        </div>
+
+        <label class="field">
+          Ton meilleur argument pour séduire Carole-Ann
+          <textarea name="argument" rows="4" placeholder="Tout ce que Carole-Ann doit absolument savoir..."></textarea>
+        </label>
+
+        <button type="submit">Envoyer ma candidature</button>
+      </form>
+    </section>
+
+    <section class="note">
+      <p>Merci de bien vouloir remplir le formulaire. Nous vous redonnerons des nouvelles dans les plus brefs délais.</p>
+    </section>
+  </main>
+</body>
+</html>
+
